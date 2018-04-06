@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Geek Book</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -50,8 +50,34 @@
                 </div>
               </div>
 
-              <form>
-              <div class="card border border-dark rounded mx-auto" style="width: 30%; margin-top: -130px;">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4 col-xs-12"></div>
+                      <div class="col-md-4 col-sm-4 col-xs-12">
+                          <form class="form-container">
+                            <h1 class="text-center">Sign Up</h1>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                              </div>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                              </div>
+                              <button type="submit" class="btn btn-block" id="submitButton">Sign Up</button>
+                            </form>
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-xs-12"></div>
+                  </div>
+              </div>     
+
+             <!--  <form>
+                 <div class="card border border-dark rounded mx-auto" style="width: 30%; margin-top: -130px;">
                   <div class="card-title text-center"><h1>Sign Up</h1></div>
                   <div class="image-upload">
                       <label for="file-input">
@@ -60,7 +86,7 @@
                       <input id="file-input" type="file"/>
                   </div>
                   <div class="card-body">
-                      <form>
+                  <form>
                           
                           <div class="input-group border border-dark">
                               <input id="first-name" type="text" class="form-control" name="email" placeholder="First Name">
@@ -80,6 +106,7 @@
                   </div>
               </div>
             </form>
+          -->
             <!--Footer-->
 <footer class="page-footer font-small bg-dark text-white pt-4 mt-4">
 
@@ -182,35 +209,17 @@
     <hr>
 
     <!--Social buttons-->
-    <div class="text-center">
-        <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-                <a class="btn-floating btn-sm btn-fb mx-1">
-                    <i class="fa fa-facebook"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-sm btn-tw mx-1">
-                    <i class="fa fa-twitter"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-sm btn-gplus mx-1">
-                    <i class="fa fa-google-plus"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-sm btn-li mx-1">
-                    <i class="fa fa-linkedin"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-sm btn-dribbble mx-1">
-                    <i class="fa fa-dribbble"> </i>
-                </a>
-            </li>
-        </ul>
-    </div>
+		<div class="container">
+			<div class="text-center center-block">
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>				
+			</div>
+		</div>
 </footer>
 </body>
 </html>
