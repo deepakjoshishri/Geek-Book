@@ -1,0 +1,44 @@
+      .image-upload > input
+      { 
+    display: none;
+      }
+        #grad1{
+            background: royalblue;
+            background: -webkit-linear-gradient(to left,rgba(14, 4, 71, 0.753),rgba(193, 65, 225, 0.363));
+            background: -moz-linear-gradient(to left ,rgba(14, 4, 71, 0.753),rgba(193, 65, 225, 0.363));
+            background: -o-linear-gradient(to left ,rgba(14, 4, 71, 0.753),rgba(193, 65, 225, 0.363));
+            background: linear-gradient(to left ,rgba(14, 4, 71, 0.753),rgba(193, 65, 225, 0.363));
+        } 
+        
+        #Geek-Book{
+          color: rgba(255, 255, 255, 0.88);
+          font-size: 60px;
+        }
+
+        #Geek-Book-Content{
+          color: rgba(255, 255, 255, 0.88);
+          font-size: 30px;
+        }
+        .bg-skew {
+          background: royalblue;
+          background: -webkit-linear-gradient(to left,rgba(14, 4, 71, 0.753),rgba(121, 1, 145, 0.692));
+          background: -moz-linear-gradient(to left,rgba(14, 4, 71, 0.753),rgba(121, 1, 145, 0.692));
+          background: -o-linear-gradient(to left,rgba(14, 4, 71, 0.753),rgba(121, 1, 145, 0.692));
+          background: linear-gradient(to left,rgba(14, 4, 71, 0.753),rgba(121, 1, 145, 0.692));
+          transform: skew(0deg, -8deg);
+          padding: 100px 0;
+          margin-top: -80px;
+        }
+
+        .content{
+          padding: 8% 10%;
+          transform: skew(0deg, 8deg);
+          text-align: center;
+        }
+       .shadow {
+           box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .6);
+        }
+
+        footer{
+            background: linear-gradient(to left ,rgba(14, 4, 71, 0.753),rgba(193, 65, 225, 0.363));
+        }
