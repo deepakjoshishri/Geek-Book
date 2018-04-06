@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Geek Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      .image-upload > input
+{
+    display: none;
+}
+        #grad1{
+            background: royalblue;
+            background: -webkit-linear-gradient(to left,rgba(14, 4, 71, 0.753),rgba(193, 65, 225, 0.363));
+            background: -moz-linear-gradient(to left ,rgba(14, 4, 71, 0.753),rgba(193, 65, 225, 0.363));
+            background: -o-linear-gradient(to left ,rgba(14, 4, 71, 0.753),rgba(193, 65, 225, 0.363));
+            background: linear-gradient(to left ,rgba(14, 4, 71, 0.753),rgba(193, 65, 225, 0.363));
+        } 
+        
+        #Geek-Book{
+          color: rgba(255, 255, 255, 0.88);
+          font-size: 60px;
+        }
+
+        #Geek-Book-Content{
+          color: rgba(255, 255, 255, 0.88);
+          font-size: 30px;
+        }
+        .bg-skew {
+          background: royalblue;
+          background: -webkit-linear-gradient(to left,rgba(14, 4, 71, 0.753),rgba(121, 1, 145, 0.692));
+          background: -moz-linear-gradient(to left,rgba(14, 4, 71, 0.753),rgba(121, 1, 145, 0.692));
+          background: -o-linear-gradient(to left,rgba(14, 4, 71, 0.753),rgba(121, 1, 145, 0.692));
+          background: linear-gradient(to left,rgba(14, 4, 71, 0.753),rgba(121, 1, 145, 0.692));
+          transform: skew(0deg, -8deg);
+          padding: 100px 0;
+          margin-top: -80px;
+        }
+
+        .content{
+          padding: 8% 10%;
+          transform: skew(0deg, 8deg);
+          text-align: center;
+        }
+       .shadow {
+           box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .6);
+        }
+    </style>
+  
+</head>
+<body>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" id="grad1">
+                <a class="navbar-brand" href="#">Geek Book</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar" aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="myNavBar">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Categories <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+
+              <div class="bg-skew">
+                <div class="content">
+                  <div id="Geek-Book">Geek Book</div>
+                  <div id="Geek-Book-Content">
+                    A platform that's not for social-networking! 
+                  </div>
+                </div>
+              </div>
+
+              <div class="card border border-dark rounded mx-auto" style="width: 30%; margin-top: -130px;">
+                  <div class="card-title text-center"><h1>Sign Up</h1></div>
+                  <div class="image-upload">
+                      <label for="file-input">
+                          <img class="card-img-top" src="img/profilePicture.png" alt="Card image cap" style="size:contain;">
+                      </label>
+                      <input id="file-input" type="file"/>
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          
+                          <div class="input-group border border-dark">
+                              <input id="email" type="text" class="form-control" name="email" placeholder="First Name">
+                          </div>
+                          <div class="input-group border border-dark">
+                                <input id="email" type="text" class="form-control" name="email" placeholder="Last Name">
+                              </div>
+                          <div class="input-group border border-dark">
+                            <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                          </div>
+                          <div class="input-group border border-dark">
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                          </div>
+                  </div> 
+              </div>
+
+</body>
+</html>
